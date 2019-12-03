@@ -1,0 +1,68 @@
+@import '../../../assets/base/flex-base.less';
+@import '../../../assets/base/other-base.less';
+
+.nav-header {
+  box-sizing: border-box;
+  height: 72px;
+  padding: 8px 0;
+  background: #26262b;
+  color: #fff;
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+
+.nav {
+  .flex;
+  .ai-c;
+  .jc-sb;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  .us-n;
+
+  .left {
+    .flex;
+    .ai-c;
+    .jc-c;
+    .pointer;
+  }
+
+  ul {
+    flex: 1;
+    .flex;
+    .jc-fs;
+    .ai-c;
+
+    li {
+      .ls-n;
+
+      a {
+        text-decoration: none;
+        .pointer;
+
+        span {
+          padding: 15px 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .right {
+    .flex;
+
+    div {
+      margin: 3px;
+      padding: 0 2px;
+      .pointer;
+    }
+  }
+}
+
+.nav-hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+.nav-hover:hover {
+  opacity: 1;
+}

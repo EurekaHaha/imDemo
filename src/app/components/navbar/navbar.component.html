@@ -1,0 +1,17 @@
+<header class="nav-header">
+  <nav class="nav">
+    <div class="left">LOGO</div>
+    <ul>
+      <li *ngFor="let item of list" class="nav-hover">
+        <a>
+          <span>{{ item }}</span>
+        </a>
+      </li>
+    </ul>
+    <div class="right">
+      <div class="nav-hover">登录</div>
+      <div class="nav-hover">注册</div>
+      <div class="nav-hover">个人信息</div>
+    </div>
+  </nav>
+</header>
