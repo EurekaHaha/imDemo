@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { docList } from '../../class/navbar';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  private list: Array<String> = ['黑',' 猫', '头', '寿', '司'];
+  private list: Array<docList> = [
+    {
+      id: 0,
+      title: '黑猫头寿司',
+      link: '/blackHeadCat0'
+    },
+    {
+      id: 1,
+      title: '黑猫头狗带',
+      link: 'blackHeadCat1'
+    }
+  ];
 
   constructor() { }
 
