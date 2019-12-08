@@ -3,4 +3,5 @@ export class docList {
   link: string;
   title: string;
   spceialTag?: string;
+  isActive?: boolean;
 }

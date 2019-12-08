@@ -5,9 +5,9 @@
       <a routerLink="/"></a>
     </div>
     <ul>
-      <li *ngFor="let item of list" class="nav-hover">
+      <li *ngFor="let item of list" class="nav-hover" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}">
         <!-- RouterLinkActive: 当前路由激活时当前a标签增加link-active类 -->
-        <a [routerLink]="item.link" RouterLinkActive="link-active">
+        <a [routerLink]="item.link">
           <span>{{ item.title }}</span>
         </a>
       </li>
